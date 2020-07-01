@@ -1,11 +1,11 @@
-#define XSIZE 7
-#define YSIZE 6
-
-#include <cstdint>
+#include <board.h>
 
 class Game {
 public:
+    void play();
+    void printOptions();
+    void congratulate(bool side);
 private:
-    char spaces[XSIZE][YSIZE];
-    uint8_t height[XSIZE];
+    Board b;
+    bool toMove;
 };
