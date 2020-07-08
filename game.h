@@ -1,11 +1,11 @@
-#include <board.h>
+#include "board.h"
 
 class Game {
 public:
     void play();
     void printOptions();
-    void congratulate(bool side);
+    void getMove();
+    void congratulate(std::optional<char> side);
 private:
     Board b;
-    bool toMove;
 };
